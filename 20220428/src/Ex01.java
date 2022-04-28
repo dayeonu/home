@@ -24,6 +24,20 @@ public class Ex01 {
 		m.eat();	//포유류가 먹는다 
 		m.play(); // Mammal클래스 자체에는 play메서드가 없다. 
 				  //클래스animal의 play메소드를 참조하여,  동물이 놀고 있어요가  출력된다
+		
+		animal animal = new Penguin();
+		 if(animal instanceof Birds) {	//동물--> 조류 의 상속 개념으로 속해있는 경우, 
+			 Birds birds = (Birds)animal;
+		 	System.out.println(1);
+		 	}
+		 else if(animal instanceof Mammal ) { // 동물--> 포유류 의 상속 개념으로 속해있는 경우,
+			 Mammal mammal = (Mammal)animal;
+			 System.out.println(0);
+		 }
+				 //		if(animal instanceof Birds)	// 검증 하는 중 , 문제없으면 형변환 하겠다는 의미.
+//				System.out.println(1);
+//			else if(animal instanceof Mammal )
+//				System.out.println(0);
 	}
 }
 //상위 클래스인 animal 이 되겠다. 
@@ -74,7 +88,11 @@ class animal{ //동물
 			void eat() {
 				System.out.println("펭귄이 먹는다");
 			}
+			void play() {
+				System.out.println("펭귄이 논다");
+			}
 		}
+		
 		class Sparrow extends Birds{ //참새
 			void eat() {
 				System.out.println("참새가 먹는다");
