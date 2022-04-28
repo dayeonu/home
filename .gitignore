@@ -1,12 +1,11 @@
 /.metadata/
+settings/
 tmp/
 *.tmp
 *.bak
 *.swp
 *~.nib
 local.properties
-.settings/
+.settings
 .loadpath
 .recommenders
-.settings
-test/
