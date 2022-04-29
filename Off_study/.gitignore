@@ -1,12 +1,22 @@
-/bin/
-/.metadata/
+### 이클립스 업로드에 제외할 파일과 폴더명들 입니다###
+
+.metadata
+bin/
 tmp/
 *.tmp
 *.bak
 *.swp
-*~.nib
 local.properties
-.settings/
+settings/
 .loadpath
 .recommenders
-.settings
+.project
+.externalToolBuilders/
+*.launch
+classpath
+.factorypath
+.buildpath
+.target
+.springBeans
+.recommenders/
+settings/
