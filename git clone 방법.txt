@@ -1,0 +1,10 @@
+프로젝트를 clone하고 싶은 디렉토리로 이동한다.
+
+마우스 오른쪽 버튼 > “Git Bash Here”을 클릭하면 Git Bash 터미널이 나온다
+경로가 맞는지 다시 한번 확인을 하고,
+
+git clone https://github.com/dayeonu/hakwon.git
+
+치고 엔터하면
+
+학원pc에 있는 파일이 내 pc로 clone된것을 확인할 수 있다!!
