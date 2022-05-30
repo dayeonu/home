@@ -11,13 +11,18 @@
 
 <%
 String[] movieList = {"타이타닉","시네마천국","혹성탈출","킹콩"};
-pageContext.setAttribute("movie", movieList);
+pageContext.setAttribute("movieList", movieList);
 %>
 <table border="1" style="width:100%; text-align:center;">
-	<c:forEach var="movie" items="${movie}" varStatus="status">
-	${status.index}&nbsp;&nbsp;
-	${status.count}&nbsp;&nbsp;
-	${movie}<br>
+	<tr>
+	<th>index</th> <th> count</th> <th> title </th>
+	</tr>
+	<c:forEach var="movie" items="${movieList}" varStatus="status">
+	<tr>
+	<td>${status.index}&nbsp;&nbsp;</td>
+	<td>${status.count}&nbsp;&nbsp;</td>
+	<td>${movie}</td>
+	</tr>
 	</c:forEach>
 	</table>
 </body>
