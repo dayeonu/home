@@ -4,20 +4,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>EL과 JSTL</title>
 </head>
 <body>
-\${5 + 2 } : ${ 5 + 2 } <br>
-\{5/2} : $ { 5 / 2 }<br>
-\${ 5 div 2 }  : $ {5 div 2} <br>
-\${ 5 mod 2  } : $ {5 mod 2 } <br>
-\${ 5 > 2}  : ${5>2 } <br>
-\${ 2 gt 10 } : $ {2 gt 10} <br>
-\${( 5 > 2 ) ? 5 : 2 } : ${( 5 > 2 ) ? 5 : 2}<br>
-\${( 5 > 2 ) || ( 2 < 10 )} : ${( 5 : 2 ) || ( 2 < 10 ) } <br>
-<% 
- String input=null;
- %>
- \${ empty input	 } : ${ empty input } <br>
+	\${5 + 2} : ${5 + 2}<br>
+	\${5 / 2} : ${5 / 2}<br>
+	\${5 div 2} : ${5 div 2}<br>
+	\${5 mod 2} : ${5 mod 2}<br>
+	\${5 > 2} : ${5 > 2}<br>
+	\${2 gt 10} : ${5 gt 2}<br>
+	\${(5 > 2) ? 5 : 2} : ${(5 > 2) ? 5 : 2}<br>
+	\${(5 > 2) || (2 < 10)} : ${(5 > 2) || (2 < 10)}<br>
+	<%
+		String input = null;
+	%>
+	\${empty input} : ${empty input}<br>
+	\${el input} : ${input}<br>
 </body>
 </html>
