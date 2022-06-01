@@ -1,17 +1,23 @@
-class Gaja { int homerun;}
-public class test {
+class Gaja {
+
+	public int homerun = 2000;
+	int ma= 1500;
+}
+class Drink{
+	int cola = 500;
+}	
+public class homerunball {
 	public static void main(String[] args) {
 
 		Gaja gaja = new Gaja();
 		gaja.homerun = 1200;
-		System.out.println("홈런볼은 "+ gaja.homerun +" 원 입니다");
+	
+		System.out.println("홈런볼은 "+ gaja.ma+" 원 입니다");
+		System.out.println("홈런볼은 "+ gaja.homerun+" 원 입니다");
 		
-		buy(d);
-		
-
-		//		
-//		Drink drink = new Drink();
-//		drink.cola = 2000;
+		Drink drink = new Drink();
+		drink.cola = 2000;
+		System.out.println("콜라는"+ drink.cola +" 원 입니다");
 //		
 //		Money don = new Money(10000);
 //		int sum = don.money - gaja.homerun;

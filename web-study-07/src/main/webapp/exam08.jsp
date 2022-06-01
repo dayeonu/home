@@ -14,10 +14,10 @@
 		seasonList.add("여름");
 		seasonList.add("가을");
 		seasonList.add("겨울");
-		request.setAttribute("lists", seasonList);
+		request.setAttribute("listssss", seasonList);
 	%>
 	<select name="season">
-		<c:forEach var="list" items="${lists}">
+		<c:forEach var="list" items="${listssss}">
 			<option>${list}</option><br>
 		</c:forEach>
 	</select>

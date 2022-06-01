@@ -19,10 +19,7 @@ class Car2{
 	}
 
 }
-
-
 public class Ex6 {
-
 	public static void main(String[] args) {
 
 		Car2 c1 = new Car2();
@@ -34,7 +31,6 @@ public class Ex6 {
 		System.out.println(c2.color +","+ c2.gearType +","+ c2.door);
 		System.out.println(c3.color +","+ c3.gearType +","+ c1.door);
 		System.out.println(c4.color +","+ c4.gearType +","+ c4.door);
-	
 	
 	}
 
