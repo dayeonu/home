@@ -13,3 +13,22 @@ jsp_7장
 JDBC를 이용한 프로그램 연습문제 풀이
 p446
 p447
+
+2022-06-08
+8장 데이터와 JDBC 1회독 
+모르는거 정리 하고 한번 더 보기 
+
+1. 두 메소드 차이  
+statement, -> resultset
+prepareStatement -> resultset
+
+2. sql 문장에서 insert into ... ? ? ?  값 사용하게 되면
+executeUpdate(); 메소드는 INSER, UPDATE, DELETE 구문을 실행할 때 사용한다 
+
+sql 문장에서 select여서 결과값이 있으면은
+executeQuery(sql) 해준다 
+
+3. prepareStatement -> setxxx(int 순서, 변수이름)
+
+4. 데이터 출력 getInt, getString 
+컬럼이 여러개여서 출력을 할때는 next() 메소드로 한 행씩 이동하게 한다.
