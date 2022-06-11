@@ -112,7 +112,7 @@
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="scott"/>
               
 					</Context>
-			<Context docBase="BoardJspProject" path="/BoardJspProject" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspProject"/><Context docBase="self_Board_project" path="/self_Board_project" reloadable="true" source="org.eclipse.jst.jee.server:self_Board_project"/></Host>
+			<Context docBase="BoardJspProject" path="/BoardJspProject" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspProject"/><Context docBase="self_Board_project" path="/self_Board_project" reloadable="true" source="org.eclipse.jst.jee.server:self_Board_project"/><Context docBase="HRD실기" path="/HRD실기" reloadable="true" source="org.eclipse.jst.jee.server:HRD실기"/><Context docBase="HRD유다연" path="/HRD유다연" reloadable="true" source="org.eclipse.jst.jee.server:HRD유다연"/><Context docBase="08장" path="/08장" reloadable="true" source="org.eclipse.jst.jee.server:08장"/></Host>
 		</Engine>
 	</Service>
 </Server>
