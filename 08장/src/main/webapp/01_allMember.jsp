@@ -1,7 +1,6 @@
 <!--  별짓 다 해봤는데도 결과값이 안나오면 sql에서 commit 안한것일수도있다~~  -->
 
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
 <% 
 Connection conn = null;
@@ -22,12 +21,11 @@ String sql = "select * from member";
 </head>
 <body>
 	<!-- 테이블 사이즈 넣기 ,보더 공부 할 것 -->
-	<table width='800' border='1'>
-		<tr>
+<table width='800' border='5'>
+			<tr>
 			<th>이름</th>
 			<th>아이디</th>
-
-		</tr>
+			</tr>
 <%
 	try{
 		/* JDBC를 이용해서 데이터베이스에 연결하는 방법 4단계를 기재한다. 해당 절차는 암기해 둘 것!!! */
@@ -47,9 +45,9 @@ String sql = "select * from member";
 	// 문자열로 선언된 컬럼이라서 getString을 사용했다. 만약 정수형태라면 getInt 겠지?
 	while(rs.next()){ 
 		out.print("<tr>"); // <tr>을 해야 테이블 안에 데이터가 들어간다. 
-		out.print("<th>"+rs.getString("name")+"<th>");
-		out.print(rs.getString("userid")); // 위처럼 <th> 를 안쓰면 테이블 밖으로 출력됨 
-		
+		out.print("<td>"+rs.getString("name")+"</td>");
+		out.print("<td>"+rs.getString("userid")+"</td>"); // 위처럼 <th> 를 안쓰면 테이블 밖으로 출력됨 
+		out.print("<tr>"); 
 	} //while문의 끝 
 	}catch(Exception e){	
 		e.printStackTrace();
