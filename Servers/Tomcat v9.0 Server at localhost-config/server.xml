@@ -102,17 +102,21 @@
 					Note: The pattern used is equivalent to using pattern="common" -->
 				<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-				<Context docBase="web-study-08" path="/web-study-08" reloadable="true" source="org.eclipse.jst.jee.server:web-study-08"/>
 
 
-				<Context docBase="web-study-07" path="/web-study-07" reloadable="true" source="org.eclipse.jst.jee.server:web-study-07"/>
-				
-				<Context docBase="0606" path="/0606" reloadable="true" source="org.eclipse.jst.jee.server:0606">
-					
-					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="scott"/>
-              
+
+
+
+
+				<Context docBase="web-study-11-mvc2" path="/web-study-11-mvc2" reloadable="true" source="org.eclipse.jst.jee.server:web-study-11-mvc2">
+					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxTotal="20" maxWaitMillis="-1" msaxIdle="10" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott">
+					</Resource>
+				</Context>
+				<Context docBase="web-study-11-movie" path="/web-study-10-movie" reloadable="true" source="org.eclipse.jst.jee.server:web-study-11-movie">
+					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxTotal="20" maxWaitMillis="-1" msaxIdle="10" name="jdbc/myoracle" password="tiger" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="scott">
+					</Resource>
 					</Context>
-			<Context docBase="BoardJspProject" path="/BoardJspProject" reloadable="true" source="org.eclipse.jst.jee.server:BoardJspProject"/><Context docBase="self_Board_project" path="/self_Board_project" reloadable="true" source="org.eclipse.jst.jee.server:self_Board_project"/><Context docBase="HRD실기" path="/HRD실기" reloadable="true" source="org.eclipse.jst.jee.server:HRD실기"/><Context docBase="HRD유다연" path="/HRD유다연" reloadable="true" source="org.eclipse.jst.jee.server:HRD유다연"/><Context docBase="08장" path="/08장" reloadable="true" source="org.eclipse.jst.jee.server:08장"/></Host>
+			<Context docBase="web-study-12-emp" path="/web-study-12-emp" reloadable="true" source="org.eclipse.jst.jee.server:web-study-12-emp"/></Host>
 		</Engine>
 	</Service>
 </Server>

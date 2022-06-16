@@ -1,3 +1,8 @@
+6/15 
+RequestDispatcher란
+https://dololak.tistory.com/502
+
+
 6/8
 -<table class = ?>
 <div class="row">
