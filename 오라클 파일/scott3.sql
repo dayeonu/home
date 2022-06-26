@@ -28,4 +28,18 @@ insert into board(num, name, email, pass, title, content)
 values(board_seq.nextval, '유다연', '12@naver.com', 1234, '안녕', 'mvc패턴2야');
     
     
-select * from board;
+select * from student;
+
+insert into student values('또치',0,70,75,80);
+
+select name, age, kor, eng, mat((kor+eng+mat)/3) as avg
+from student;
+
+
+create table student(
+ name varchar2(10),
+ age number(10),
+ kor number(10),
+ eng number(10),
+ mat number(10)
+ );

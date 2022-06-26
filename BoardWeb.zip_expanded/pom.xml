@@ -115,6 +115,20 @@
 			<version>1.9.9.1</version>
 			<!-- 이 자리에 있던 스코프는 삭제해야함 -->
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>${org.springframework-version}</version>
+	</dependency>
+			
+	<dependency>
+	    <groupId>commons-dbcp</groupId>
+	    <artifactId>commons-dbcp</artifactId>
+	    <version>1.4</version>
+	</dependency>
+
 
 		<!-- Test -->
 		<dependency>
