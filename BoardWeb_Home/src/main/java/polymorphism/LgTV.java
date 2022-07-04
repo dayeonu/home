@@ -5,16 +5,16 @@ public class LgTV implements TV {
 	public LgTV() {
 		System.out.println("LgTV 생성자(default)");
 	}
-	public void turnOn() {
+	public void powerOn() {
 		System.out.println("LgTV---전원 켠다");
 	}
-	public void turnOff() {
+	public void powerOff() {
 		System.out.println("LgTV---전원 끈다");
 	}
-	public void SoundUp() {
+	public void volumeUp() {
 		System.out.println("LgTV---소리 올린다");
 	}
-	public void SoundDown() {
+	public void volumeDown() {
 		System.out.println("LgTV---소리 내린다");
 	}
 	 

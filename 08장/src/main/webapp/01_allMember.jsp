@@ -1,7 +1,6 @@
-<!--  별짓 다 해봤는데도 결과값이 안나오면 sql에서 commit 안한것일수도있다~~  -->
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
+
 <% 
 Connection conn = null;
 Statement stmt = null;

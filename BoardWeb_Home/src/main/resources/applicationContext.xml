@@ -12,15 +12,14 @@
 		base-package="com.springbook.biz">
 	</context:component-scan>
 
-	<bean id="log" class="com.springbook.biz.common.Log4jAdvice" />
+	<bean id="log" class="com.springbook.biz.HomeController.java">
 	<aop:config>
 		<aop:pointcut id="allPointcut" expression="execution(* com.springbook.biz..*Impl.*(..))" />
 		<aop:aspect ref="log">
 			<aop:before pointcut-ref="allPointcut" method="printLogging" />
 		</aop:aspect>
 	</aop:config>
-
-
+	</bean>
 
 	<!-- <bean id="CollectionBean" class="com.springbook.ioc.injection.CollectionBean"> -->
 	<!-- <property name="addressList"> -->
@@ -56,4 +55,3 @@
 	<!-- </props> -->
 	<!-- </property> -->
 	<!-- </bean> -->
-</beans>
